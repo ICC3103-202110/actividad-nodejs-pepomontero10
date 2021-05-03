@@ -1,4 +1,6 @@
-
+var readlineSync = require('readline-sync')
+var number = readlineSync.question('May I have your number?:');
+number = parseInt(number);
 function fibonacci(numero){
     if (numero === 1){
       console.log("[0,1]")
@@ -18,4 +20,4 @@ function fibonacci(numero){
     }
   }
   
-fibonacci(8)
+fibonacci(number)
